@@ -6,6 +6,9 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
+const fb = require('./services/firebase');
+fb.firebaseConfig();
+
 new Vue({
   router,
   store,
